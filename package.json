@@ -1,0 +1,14 @@
+{
+  "name": "app_crud",
+  "version": "1.0.0",
+  "description": "CRUD React + Node + MySQL levantado desde carpeta principal",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
